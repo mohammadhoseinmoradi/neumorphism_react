@@ -1,0 +1,344 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@font-face {
+  font-family: 'yekan';
+  src: url('./assets/fonts/yekan-font/Yekan.eot');
+  src: url('./assets/fonts/yekan-font/Yekan.eot?#iefix') format('yekan-opentype'),
+       url('./assets/fonts/yekan-font/Yekan.woff') format('woff'),
+       url('./assets/fonts/yekan-font/Yekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'parastoo';
+  src: url('./assets/fonts/parastoo-font-v1.0.0-alpha5/web/Parastoo.eot');
+  src: url('./assets/fonts/parastoo-font-v1.0.0-alpha5/web/Parastoo.eot?#iefix') format('parastoo-opentype'),
+       url('./assets/fonts/parastoo-font-v1.0.0-alpha5/web/Parastoo.woff') format('woff'),
+       url('./assets/fonts/parastoo-font-v1.0.0-alpha5/web/Parastoo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sahel';
+  src: url('./assets/fonts/sahel-font-v1.0.0-alpha14/Sahel.eot');
+  src: url('./assets/fonts/sahel-font-v1.0.0-alpha14/Sahel.eot?#iefix') format('sahel-opentype'),
+       url('./assets/fonts/sahel-font-v1.0.0-alpha14/Sahel.woff') format('woff'),
+       url('./assets/fonts/sahel-font-v1.0.0-alpha14/Sahel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'samim';
+  src: url('./assets/fonts/samim-font-v2.0.1/Samim.eot');
+  src: url('./assets/fonts/samim-font-v2.0.1/Samim.eot?#iefix') format('samim-opentype'),
+       url('./assets/fonts/samim-font-v2.0.1/Samim.woff') format('woff'),
+       url('./assets/fonts/samim-font-v2.0.1/Samim.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'shabnam';
+  src: url('./assets/fonts/shabnam-font-v2.4.0/Shabnam.eot');
+  src: url('./assets/fonts/shabnam-font-v2.4.0/Shabnam.eot?#iefix') format('shabnam-opentype'),
+       url('./assets/fonts/shabnam-font-v2.4.0/Shabnam.woff') format('woff'),
+       url('./assets/fonts/shabnam-font-v2.4.0/Shabnam.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'tanha';
+  src: url('./assets/fonts/tanha-font-v0.9/Tanha.eot');
+  src: url('./assets/fonts/tanha-font-v0.9/Tanha.eot?#iefix') format('tanha-opentype'),
+       url('./assets/fonts/tanha-font-v0.9/Tanha.woff') format('woff'),
+       url('./assets/fonts/tanha-font-v0.9/Tanha.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('./assets/fonts/vazir-font-v18.0.0/Vazir-Bold.eot');
+  src: url('./assets/fonts/vazir-font-v18.0.0/Vazir.eot?#iefix') format('vazir-opentype'),
+       url('./assets/fonts/vazir-font-v18.0.0/Vazir.woff') format('woff'),
+       url('./assets/fonts/vazir-font-v18.0.0/Vazir.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'farsh';
+  src:url('./assets/fonts/ShahrFarsh@fontsclub.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+/* background: linear-gradient(0deg, #313949 0%, rgb(51, 53, 58) 99%); */
+
+
+ background: 
+ linear-gradient(0deg, rgba(53, 58, 64, 1), rgba(22, 23, 27, 1)); 
+/* box-shadow:  36 40 56px 0px, inset  1px 2px 2px 0px; */
+/* background-color: rgba(28, 30, 34, 1); */
+/* height: 100vh; */
+
+/* background: url("../src/assets/img/7951379690780.jpg") no-repeat center center fixed;
+background-size: cover; */
+  font-family:'parastoo', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  
+
+}
+
+.inputCssCustom {
+  border-radius: 20px;
+  background: 
+  linear-gradient(0deg, rgba(53, 58, 64, 1), rgba(22, 23, 27, 1)); /* ⬅️ روی همه */
+height: 40vh;
+width: 40vh;
+  color:white;
+  border: 2px solid #313949; /* اطمینان از اینکه تغییر نکند */
+
+
+
+  
+}  
+
+.inputCssCustom:focus {
+  border: 2px solid rgb(53, 53, 53) ;
+  font-size: large;
+  outline: none;
+}
+
+.inputInput{
+  border-radius: 14px;
+  background: #313949;
+             
+    color:white;
+    border: 2px solid #313949;
+    width: 95%;
+
+}
+.inputInput:focus{
+  border: none;
+}
+.inputInput:checked{
+  border: none;
+}
+.buttonLoginSubmit{
+  border-radius: 14px;
+  background-color: rgba(50, 54, 59, 1);
+      
+  box-shadow: 
+  inset 2px 1px 2px 0px rgba(255, 255, 255, 0.05), /* سایه داخلی تیره */
+  inset -6px -6px 66px  0px rgba(255, 255, 255, 0.05),
+  inset 20px 20px 81px 0px rgba(0, 0, 0, 0.55);
+    color:white;
+    border: 2px solid #313949; /* اطمینان از اینکه تغییر نکند */
+    width: 95%;
+    height: 7vh;
+}
+
+.btn{
+  /* background: linear-gradient(0deg, #313949 0%, rgb(51, 53, 58) 99%); */
+border-radius: 50%;
+  background: 
+  linear-gradient(315deg, rgba(1, 107, 184, 1), rgba(17, 168, 253, 1)), /* ⬅️ روی همه */
+  linear-gradient(315deg , rgba(0, 94, 163, 1), rgba(17, 168, 253, 1)), /* ⬅️ وسط */
+  linear-gradient(315deg, rgba(17, 168, 253, 1), rgba(0, 129, 201, 1)), /* ⬅️ زیرین‌ترین */
+  linear-gradient(315deg, rgba(17, 168, 253, 1), rgba(0, 129, 201, 1)); /* ⬅️ زیرین‌ترین */
+  box-shadow: 
+  10px 15px 40px  rgba(0, 0, 0, 0.5) , /* سایه داخلی تیره */
+  -10px -15px 40px    rgba(82, 89, 94, 0.5) ; /* سایه داخلی روشن */
+}
+
+
+.buttonLoginSubmit:hover{
+  background: 
+  linear-gradient(0deg, rgba(16, 17, 19, 1), rgba(43, 47, 51, 1)); /* ⬅️ روی همه */
+
+  
+  
+  box-shadow: 
+
+  19px 19px 65px 0px rgba(20, 20, 21, 1), /* سایه داخلی تیره */
+  -19px -19px 65px  0px rgba(72, 80, 87, 1); 
+} 
+
+
+.out{
+  background: 
+  linear-gradient(0deg, rgba(53, 58, 64, 1), rgba(22, 23, 27, 1));
+  box-shadow: 
+  10px 10px 20px rgba(38, 44, 55, 1)   , 
+  -10px -10px 20px   rgba(72, 80, 99, 0.26)  ; 
+}
+
+.in{
+  background: 
+  linear-gradient(0deg, rgba(53, 58, 64, 1), rgba(22, 23, 27, 1));/* ⬅️ روی همه */
+  box-shadow: 
+  10px 10px 60px   rgba(72, 80, 99, 0.26)    , 
+  inset 10px 10px 40px    rgba(38, 44, 55, 1) ; 
+}
+
+.boxS{
+  background: 
+rgba(53, 58, 64, 1) ;/* ⬅️ روی همه */
+
+
+  box-shadow: 
+  inset 0px 0px 20px 5px rgba(63, 63, 63, 0.45),
+  0px 0px 40px 12px rgba(16, 16, 18, 0.75), /* سایه داخلی تیره */
+  0px 0px 30px  12px rgba(38, 46, 50, 1); 
+
+}
+.boxShadow{
+  background: 
+  rgba(53, 58, 64, 1) ;/* ⬅️ روی همه */
+  
+  
+    box-shadow: 
+    inset 0px 0px 20px 5px rgba(63, 63, 63, 0.45),
+    0px 0px 40px 12px rgba(16, 16, 18, 0.75), /* سایه داخلی تیره */
+    0px 0px 30px  12px rgba(38, 46, 50, 1); 
+}
+.boxShadow:hover{
+  background: 
+  linear-gradient(0deg, rgba(16, 17, 19, 1), rgba(43, 47, 51, 1)); /* ⬅️ روی همه */
+
+  
+  
+  box-shadow: 
+
+  19px 19px 65px 0px rgba(20, 20, 21, 1), /* سایه داخلی تیره */
+  -19px -19px 65px  0px rgba(72, 80, 87, 1); 
+} 
+ .menuS{
+  background: 
+  linear-gradient(0deg, rgba(16, 17, 19, 1), rgba(43, 47, 51, 1)); /* ⬅️ روی همه */
+
+  
+  
+  box-shadow: 
+
+  19px 19px 65px 0px rgba(20, 20, 21, 1), /* سایه داخلی تیره */
+  -19px -19px 65px  0px rgba(72, 80, 87, 1); 
+
+ }
+ .items{
+    background-color: rgba(50, 54, 59, 1);
+      
+  box-shadow: 
+  inset 2px 1px 2px 0px rgba(255, 255, 255, 0.05), /* سایه داخلی تیره */
+  inset -6px -6px 66px  0px rgba(255, 255, 255, 0.05),
+  inset 20px 20px 81px 0px rgba(0, 0, 0, 0.55);
+  }
+ 
+ .bgmain{
+  background-color: rgba(32, 33, 34, 1);
+  box-shadow: 
+  inset -6px -6px 12px 0px rgba(255, 255, 255, 0.25), /* سایه داخلی تیره */
+  inset 6px 6px 12px  0px rgba(38, 46, 50, 1);  
+ }
+ .menoS .inshadow{
+  box-shadow: 
+  inset 0px 0px 20px 5px rgba(63, 63, 63, 0.45),
+  0px 0px 20px 20px rgba(16, 16, 18, 0.75), /* سایه داخلی تیره */
+  0px 0px 20px  20px rgba(38, 46, 50, 1);   
+ }
+
+.inshadow{
+  background:  radial-gradient(circle, rgba(53,58,64,1) 20%, rgba(22,23,27,1) 80%);
+  border-radius:150px;
+  /* background: 
+  linear-gradient(0deg, rgba(53, 58, 64, 1), rgba(22, 23, 27, 1));  */
+  border-radius:150px;
+
+  box-shadow: 
+  10px 15px 40px  rgba(0, 0, 0, 0.5) , /* سایه داخلی تیره */
+  -10px -15px 40px    rgba(82, 89, 94, 0.5) ; /* سایه داخلی روشن */
+}
+.inputGenerate{
+  background:  rgba(53, 58, 64, 1) ;
+  box-shadow: 
+  inset 0px 0px 40px  rgba(0, 0, 0, 0.5) , /* سایه داخلی تیره */
+  inset 0px 0px 40px    rgba(82, 89, 94, 0.5) ; /* سایه داخلی روشن */
+  border-radius: 28px;
+  border: 1px solid black;
+}
+
+.outshadow{
+  background: 
+  linear-gradient(0deg, rgba(53, 58, 64, 1), rgba(22, 23, 27, 1)); /* ⬅️ روی همه */
+  border-radius:150px;
+
+  box-shadow: 
+  10px 15px 40px  rgba(0, 0, 0, 0.5) , /* سایه داخلی تیره */
+  -10px -15px 40px    rgba(82, 89, 94, 0.5) ; /* سایه داخلی روشن */
+}
+
+
+.wave {
+  background-color: rgba(50, 54, 59, 1);
+      
+  box-shadow: 
+  inset 2px 1px 2px 0px rgba(255, 255, 255, 0.05), /* سایه داخلی تیره */
+  inset -6px -6px 66px  0px rgba(255, 255, 255, 0.05),
+  inset 20px 20px 81px 0px rgba(0, 0, 0, 0.55);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 14em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  
+  
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
